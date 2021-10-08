@@ -1,24 +1,31 @@
+//added the libraries to be used.
 
+#include <iostream.h>	// Input-Output
+#include <fstream.h>	// File I/O
+#include <process.h>	// Processing
+#include <string.h>		// String manipulation
+#include <ctype.h>		// Characteristic manipulation
+#include <stdio.h>		// Basic functional lib
+#include <conio.h>		// DOS reproducability
 
-#include <iostream.h>
-#include <fstream.h>
-#include <process.h>
-#include <string.h>
-#include <ctype.h>
-#include <stdio.h>
-#include <conio.h>
-
+// Expected maximum size in use.
 #define SIZE 20
 
+// Time structure
 struct time{
 	int hh,mm;
 };
+/* Time structure update viability analysis: time, hh, mm
+Updation relatively easy using 'Find.' */
 
+// Date structure
 struct date
 {
 	int dd,mm,yyyy;
-}currdate = {24,1,2020};
+}currdate = {24,1,2020}; // Currdate instantiation to allow for direct access to User login functions.
 
+
+// Class object
 class Admincontrol
 {
 public:
